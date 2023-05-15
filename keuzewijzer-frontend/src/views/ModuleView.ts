@@ -2,18 +2,12 @@ import { View } from './View';
 import modules from "../mock/mock_module";
 
 export class ModuleView implements View {
-    public data = modules;
     public template = `
-    <h1>TITLE</h1>
     {{#each modules}}
-        <h1>{{this.year}}</h1>       
-    
-    {{#each items}}
-    <p>{{this.name}}</p>
-    
-    {{/each}}
-    
+        <h1>Year to select: {{year}}</h1>       
+        <p>Module name: {{name}}</p>    
     {{/each}}
     `;    
+    public data = modules;
 }
 console.log(modules);
