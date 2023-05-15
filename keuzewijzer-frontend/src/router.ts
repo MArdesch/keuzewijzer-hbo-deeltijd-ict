@@ -1,3 +1,4 @@
+import { ModuleView } from './views/ModuleView';
 import { View } from './views/View';
 import * as Handlebars from 'handlebars';
 
@@ -8,6 +9,10 @@ export class Router {
   constructor() {
     this.routes = new Map();
     this.currentView = null;
+
+    // Add the "Contact" route
+    const moduleView = new ModuleView();
+    this.addRoute('/module', moduleView);
   }
 
   public addRoute(path: string, view: View): void {

@@ -1,4 +1,4 @@
-const modules: { id: number, name: string, description: string, year: number, semester: number }[] = [
+const modules = [
     {
         id: 1,
         name: "Exploring IT: IDS & SE",
@@ -27,6 +27,6 @@ const modules: { id: number, name: string, description: string, year: number, se
         year: 4,
         semester: 1
     }
-]
+];
 
 export default modules;

@@ -17,28 +17,7 @@
 
 // //initial render
 // render();
+
 import { App } from "./app";
 
 const app = new App();
-
-import modules from "mock/mock_module_endpoint";
-
-console.log(modules);
-
-modules.forEach(function (year) {
-	console.log(year);
-});
-
-// let template = 
-// `{{#each modules}}
-// 	<h1>{{this.category}}</h1>
-// 	<div>
-// 		{{this.name}}
-// 	</div>
-// {{/each}}`;
-
-// let templateScript = Handlebars.compile(template)
-// let context = modules;
-// let templateResult = templateScript(context);
-
-// console.log(templateResult)
